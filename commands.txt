@@ -1,0 +1,43 @@
+pwd
+mkdir css
+mkdir -p img/logo
+touch index.html
+touch css/style.css
+ls
+ls -la
+cd css
+cd ..
+cp index.html about.html
+cp -R css csss
+rm about.html
+cp index.html about.html
+mv about.html contact.html
+
+nano .gitignore (Save -> Ctrl+O, Exit -> Ctrl+X)
+cat .gitignore
+
+git init (Git Repo)
+git status
+git add .
+git commit -m "first version"
+touch README.md
+git add .
+git commit -m "2nd version"
+git tag 0.1.0
+touch LICENSE.md
+git add .
+git commit -m "3rd version"
+git log
+git checkout 0.1.0
+git checkout main
+
+git branch feature
+git branch
+git checkout feature
+touch api.js server.js
+git add .
+git commit -m "4th version on feature"
+git log
+git checkout main
+git log
+git merge feature
